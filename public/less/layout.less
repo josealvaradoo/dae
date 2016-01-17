@@ -30,6 +30,14 @@ header {
 /* Navbar */
 .navbar {
 	font-family: "Open Sans";
+	.menu-toggle {
+		padding: 8px 16px;
+		cursor: pointer;
+		font-size: 1.5rem;
+		&:hover {
+			background: #1b2b3c;
+		}
+	}
 	a {
 		text-decoration: none;
 	}
@@ -200,7 +208,9 @@ form {
 		}
 		input[type=text],
 		input[type=email],
-		input[type=password] {
+		input[type=password],
+		textarea {
+			background: transparent;
 			position: relative;
 			width: 90%;
 			display: inline-block;
@@ -307,6 +317,13 @@ footer {
 	}
 	.social-media i {
 		font-size: 1.7rem;
+		margin-left: 5px;
+	}
+	.social-media a {
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
 	}
 }
 /* Helps */
@@ -337,4 +354,10 @@ ul.styled li {
 }
 .text-muted {
 	color: @colormuted;
+}
+.xs-show {
+	display: none;
+}
+.relative {
+	position: relative;
 }

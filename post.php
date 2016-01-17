@@ -29,14 +29,14 @@
 	<main>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-9 col-sm-8 col-xs-12">
 					<?php include("./includes/notification.php") ?>
 					<article>
 						<h3><?php echo $post["title"]; ?></h3>
 						<div class="article-content text-justify"><?php echo $post["content"] ?></div>
 					</article>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-4 col-xs-12">
 					<?php include("./includes/aside.php") ?>
 				</div>
 			</div>

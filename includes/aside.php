@@ -9,12 +9,14 @@
 	<a href="#">Universidad de Carabobo</a>
 	<br>
 	<br>
-	<legend>Twitter</legend>
-	<a class="twitter-timeline" data-widget-id="600720083413962752" href="https://twitter.com/TwitterDev" data-chrome="nofooter noborders" height="400">
-		Tweets by @TwitterDev
-	</a>
-	<br>
-	<br>
 	<legend>Información</legend>
 	<adress>dae_ing@uc.edu.ve</adress>
+	<div class="xs-hidden">
+		<br>
+		<br>
+		<legend>Twitter</legend>
+		<a class="twitter-timeline" data-widget-id="600720083413962752" href="https://twitter.com/TwitterDev" data-chrome="nofooter noborders" height="400">
+			Tweets by @TwitterDev
+		</a>
+	</div>
 </aside>

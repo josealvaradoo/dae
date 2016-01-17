@@ -1,0 +1,85 @@
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: @screen-sm-min) {
+	.container {
+		width: 98%;
+		margin: auto;
+	}
+	.xs-hidden {
+		display: none !important;
+	}
+	.xs-show {
+		display: inline;
+	}
+	header {
+		height: 200px;
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	.navbar {
+		position: relative;
+		.nav {
+			position: absolute;
+			top: 49px;
+			left: 0;
+			right: 0;
+			background: #1b2b3c;
+			overflow: auto;
+			z-index: 2;
+			& > li {
+				position: static;
+				display: block;
+				border-bottom: 1px solid rgba(256,256,256,0.1);
+				.caret {
+					display: none;
+				}
+				ul {
+					position: static;
+					display: block;
+					overflow: auto;
+					li {
+						display: block;
+						&:last-child {
+							border-bottom: 1px solid rgba(256,256,256,0.1);
+						}
+					}
+				}
+			}
+		}
+	}
+	.form {
+		min-width: 100%;
+		width: 100%;
+		.input-addon {
+			input[type=text],
+			input[type=password],
+			input[type=email] {
+				max-width: 79% !important;
+				width: 79% !important;
+			}
+		}
+	}
+	footer {
+		.social-media {
+			a > .fa {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: @screen-md-min) {
+	.container {
+		width: 90%;
+		margin: auto;
+	}
+	.sm-hidden {
+		display: none;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: @screen-lg-min) {
+	
+}

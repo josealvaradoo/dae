@@ -24,7 +24,7 @@
 	<main>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-9 col-sm-8 col-xs-12">
 					<?php include("./includes/notification.php") ?>
 					<article>
 						<h3>Acceso <?php echo $_GET["type"] ?></h3>
@@ -54,7 +54,7 @@
 						</div>
 					</article>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-4 col-xs-12">
 					<?php include("./includes/aside.php") ?>
 				</div>
 			</div>
