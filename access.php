@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8">
 	<title>Acceso <?php echo $_GET["type"] ?> - <?php echo $titleWeb; ?></title>
 	<meta name="description" content="">
