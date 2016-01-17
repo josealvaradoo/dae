@@ -34,7 +34,7 @@
 								<label for="cedula">Cédula de Identidad</label>
 								<div class="input-addon">
 									<div class="add-on"><i class="fa fa-user"></i></div>
-									<input type="text" name="cedula" class="form-control" id="cedula" required>
+									<input type="text" name="cedula" class="form-control" id="cedula" autocomplete="off" required>
 								</div>
 							</div>
 							<div class="form-group">
@@ -45,9 +45,13 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<button class="btn btn-primary btn-comic btn-uppercase"><i class="fa fa-check"></i> Continuar</button>
+								<button class="btn btn-primary btn-comic btn-uppercase" onclick="fn_login();"><i class="fa fa-check"></i> Continuar</button>
 							</div>
 						</form>
+						<div class="alert alert-warning alert-pro hide">
+							<div class="close">x</div>
+							<p>El servicio de Login está deshabilitado.</p>
+						</div>
 					</article>
 				</div>
 				<div class="col-md-3">
@@ -58,5 +62,10 @@
 	</main>
 	<?php include("./includes/footer.php") ?>
 	<?php include("./includes/scripts.php") ?>
+	<script>
+		var fn_login = function() {
+			$(".alert").fadeIn();
+		}
+	</script>
 </body>
 </html>

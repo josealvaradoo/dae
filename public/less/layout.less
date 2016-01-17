@@ -275,6 +275,26 @@ form {
 	border: 1px solid #9bbfdd;
 	color: #175faa;
 }
+.alert-pro {
+	border-radius: 0;
+	padding: 6px 15px;
+	color: #fafafa;
+	.close {
+		color: rgba(256,256,256,0.7);
+		&:hover {
+			color:inherit;
+		}
+	}
+	&.alert-primary {
+		background: @colorprincipal;
+	}
+	&.alert-danger {
+		background: @colorpeligro;
+	}
+	&.alert-warning {
+		background: @colorwarning;
+	}
+}
 /* Footer */
 footer {
 	background: #111;
