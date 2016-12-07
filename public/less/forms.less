@@ -1,0 +1,54 @@
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
+form{
+    .addon-group{
+        overflow: hidden;
+        .form-control,
+        .addon{
+            float: left;
+        }
+        .addon{
+            width:10%;
+            background: @primary-color;
+            color: @white-color;
+            padding: 14px 15px 15.5px 15px;
+        }
+        .form-control{
+            max-width: 90% !important;
+        }
+    }
+}
+.form{
+    width: 100%;
+    .form-group{
+        padding: 10px;
+        .form-control{
+            display: block;
+            font-family: @font-family;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            border:1px solid #d7d7d7;
+            color: #888;
+            resize: none;
+        }
+        textarea.form-control{
+            width: 100%;
+            height: 100px;
+        }
+    }
+}
+.login-form{
+    width: 500px;
+    margin: 100px auto;
+    .form-group {
+        margin: 10px;
+        .form-control {
+            display: block;
+            font-family: @font-family;
+            box-sizing: border-box;
+            padding: 15px;
+            width: 100%;
+            border: 1px solid @border-color;
+        }
+    }
+}

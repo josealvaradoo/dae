@@ -1,0 +1,49 @@
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
+a.btn,
+div.btn,
+button.btn{
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 12px;
+    cursor:pointer;
+    text-align: center;
+    transition-duration: .3s;
+    &.uppercase{
+        font-size: .7rem;
+        text-transform: uppercase;
+    }
+    &.btn-block{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &.btn-primary{
+        background: @primary-color;
+        color: white;
+        &:hover {
+            background: lighten(@primary-color, 5%);
+            box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+        }
+    }
+    &.btn-inverse{
+        border: 1px solid @white-color;
+        color: white;
+        &:hover {
+            background: @white-color;
+            color: @font-color;
+        }
+    }
+    &.btn-foo{
+        border-radius: 0;
+        border: none;
+        background: @white-color;
+        color: @font-color;
+        &:hover {
+            background: @link-color;
+            color: @white-color;
+            box-shadow: 0px 3px 3px rgba(0,0,0,0.6);
+        }
+    }
+}

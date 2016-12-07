@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta es la pagina web La Direccion de Asuntos Estudiantiles de la Facultad de Ingenieria UC.">
+    <meta name="author" content="Jose Alvarado">
+    <!--<base href="">-->
+    <title>Dirección de Asuntos Estudiantiles | Facultad de Ingenieria UC</title>
+    <!--<link rel="canonical" href="">-->
+    <link rel="stylesheet" href="public/css/ed-grid.css">
+    <link rel="stylesheet" href="public/css/styles.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/9e7d1bdf6f.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-primary main-center">
+        <div class="item-grid s-100 m-80 main-justify cross-center">
+            <div class="logo">
+                <img src="public/images/logo.png" alt="Logo de la Facultad de Ingenieria UC">
+            </div>
+            <div class="toggle-menu">
+                <span class="fa fa-bars"></span>
+            </div>
+            <ul class="nav hide-sm">
+                <li><a href="home">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Quiénes Somos <div class="caret"></div></a>
+                    <ul>
+                        <li><a href="#">Misión</a></li>
+                        <li><a href="#">Visión</a></li>
+                        <li><a href="#">Objetivos</a></li>
+                        <li><a href="#">Organización</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Créditos Web</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Escuelas <div class="caret"></div></a>
+                    <ul>
+                        <li><a href="#">Estudios Básicos</a></li>
+                        <li><a href="#">Civil</a></li>
+                        <li><a href="#">Eléctrica</a></li>
+                        <li><a href="#">Industrial</a></li>
+                        <li><a href="#">Mecánica</a></li>
+                        <li><a href="#">Química</a></li>
+                        <li><a href="#">Telecomunicaciones</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Enlaces <div class="caret"></div></a>
+                    <ul>
+                        <li><a href="#">Ingeniería</a></li>
+                        <li><a href="#">Universidad</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Información <div class="caret"></div></a>
+                    <ul>
+                        <li><a href="#">Admisión</a></li>
+                        <li><a href="#">Regl. Evaluación</a></li>
+                        <li><a href="#">Pensa de estudios</a></li>
+                        <li><a href="#">Gestión Estudiantil</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="main-header main-center cross-center">
+        <!-- <nav class="access-navbar"></nav> -->
+        <div class="item-grid s-80">
+            <h1 class="page-title">
+                <span class="hide-xs">Dirección de Asuntos<br>Estudiantiles</span>
+                <span class="hide show-sx">DAE</span>
+            </h1>
+            <div class="hide-xs">
+                <br>
+                <a href="login" class="btn btn-foo uppercase"><span class="fa fa-graduation-cap"></span> Acceso Estudiantes</a>
+                <a href="login" class="btn btn-foo uppercase"><span class="fa fa-users"></span> Acceso Docentes</a>
+            </div>
+        </div>
+    </header>
+    <section class="welcome-wrapper grid-container main-center">
+        <div class="item-grid s-80">
+            <span class="welcome-message">Gestión Estudiantil</span>
+        </div>
+    </section>
+    <main class="main grid-container main-center">
+        <section class="item-grid s-80">
+            <form action="#" method="#" class="login-form">
+                <div class="form-group">
+                    <div class="alert alert-info">
+                        Alumnos de nuevo ingreso usar cédula como contraseña.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="addon-group">
+                        <div class="addon"><span class="fa fa-id-card"></span></div>
+                        <input type="number" name="id" class="form-control" placeholder="Cédula de Identidad" autocomplete="off" required min="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="addon-group">
+                        <div class="addon"><span class="fa fa-key"></span></div>
+                        <input type="password" class="form-control" placeholder="Contraseña" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary uppercase btn-block">Iniciar sesión</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer main-center">
+        <section class="grid-container s-80 main-justify cross-center">
+            <div class="item-grid s-50 m-45 l-40">
+                <p>Dirección de Asuntos Estudiantiles</p>
+                <p>Facultad de Ingeniería</p>
+                <p>Universidad de Carabobo</p>
+                <p>Información: dae_ing@uc.edu.ve</p>
+            </div>
+            <div class="item-grid s-50 m-45 l-10">
+                <img src="public/images/universidad-carabobo.png" alt="Logo de la Universidad de Carabobo" class="uc">
+            </div>
+        </section>
+    </footer>
+    <script src="public/script/background.js"></script>
+    <script src="public/script/moment.js"></script>
+    <script src="public/script/togglemenu.js"></script>
+</body>
+</html>

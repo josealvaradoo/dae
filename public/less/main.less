@@ -1,0 +1,45 @@
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
+.main{
+    margin: 40px 0;
+    p.introduction {
+        position:relative;
+        right: 30px;
+        opacity: 0;
+        animation: fade-paragraph 1s 0.7s linear forwards;
+    }
+}
+.today {
+    position: relative;
+    bottom: 80px;
+    background: @secondary-color;
+    padding: 80px 0;
+    font-size: @font-size*5;
+    color: white;
+    font-weight: 100;
+    box-shadow: 0 -3px 4px rgba(0,0,0,0.5);
+    opacity: 0;
+    animation: fade-today 0.6s 1s linear forwards;
+    p:last-child{
+        font-size: @font-size*.3;
+    }
+}
+#links{
+    ul{
+        list-style: none;
+    }
+    li {
+        padding: 10px 0;
+        .marker{
+            position: relative;
+            display: inline-block;
+            padding: 4px 11px;
+            margin-right: 6px;
+            background: @primary-color;
+            font-size: @font-size*.9;
+            color: white;
+        }
+    }
+}
+#contact{
+    margin-top: 100px;
+}

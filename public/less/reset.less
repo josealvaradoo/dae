@@ -1,19 +1,47 @@
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: none;
-	list-style: none;
-
-	box-sizing: content-box;
-	-o-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
+	 margin: 0;
+	 border: 0;
+	 padding: 0;
+	 outline: none;
+}
+html,
+body {
+	height: 100%;
+	min-height: 100%;
 }
 body {
-	background: #f1f1f1;
-	font-size: 1em;
-	color: #444;
-	font-family: "Open Sans", sans-serif;
+	font-family: @font-family;
+	font-size: .95rem;
+	color: @font-color;
+}
+a {
+	color: @link-color;
+}
+.alert {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: @font-size*.9;
+	&.alert-warning{
+		color: darken(@warning-color, 30%);
+		border-left: 7px solid @warning-color;
+		background: lighten(@warning-color, 42%);
+	}
+	&.alert-danger{
+		color: darken(@danger-color, 30%);
+		border-left: 7px solid @danger-color;
+		background: lighten(@danger-color, 45%);
+	}
+	&.alert-success{
+		color: darken(@success-color, 30%);
+		border-left: 7px solid @success-color;
+		background: lighten(@success-color, 40%);
+	}
+	&.alert-info{
+		color: darken(@info-color, 30%);
+		border-left: 7px solid @info-color;
+		background: lighten(@info-color, 38%);
+	}
 }

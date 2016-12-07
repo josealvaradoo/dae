@@ -1,0 +1,34 @@
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
+header.main-header{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: @secondary-color;
+    background-image: url('../images/header/writting.jpg');
+    background-size: cover;
+    clear: both;
+    .item-grid{
+        position: relative;
+        bottom: 15px;
+        opacity: 0;
+        animation: fade 1s 0.5s linear forwards;
+    }
+    h1.page-title{
+        color: white;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .btn:last-child {
+        margin-left: 10px;
+    }
+}
+.welcome-wrapper{
+    background: @primary-color;
+    padding: 40px 0;
+    color: white;
+    .welcome-message{
+        font-weight: 100;
+        font-size: @font-size*2;
+    }
+}

@@ -1,9 +1,5 @@
+#Friendly URL
 RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-l
-
-RewriteRule ^post/(.+)$				post.php?seo=$1
-RewriteRule ^escuela/(.+)$			escuela.php?seo=$1
-RewriteRule ^acceso/(.+)$			access.php?type=$1
+RewriteRule     ^home       index.html
+RewriteRule     ^login      login.html

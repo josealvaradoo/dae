@@ -1,0 +1,138 @@
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
+nav.navbar{
+    border-bottom: 1px solid @border-color;
+    .logo {
+        display: inline-block;
+        padding:14px;
+        img {
+            width: 110px;
+        }
+    }
+    &.navbar-primary {
+        ul.nav {
+            background: @navbar-color;
+            a{
+                color: @lightblue-color;
+                padding: 18px 25px;
+                &:hover {
+                    background: @darken-color;
+                }
+            }
+            .caret {
+                border-top-color: @lightblue-color;
+            }
+            li.dropdown {
+                position: relative;
+                z-index: 3;
+                &:hover {
+                    ul {
+                        display: inline-block;
+                    }
+                }
+                ul {
+                    display: none;
+                    position: absolute;
+                    width: 200px;
+                    background: @darken-color;
+                    li {
+                        display: block;
+                        border-bottom: 1px solid rgba(100,100,100,0.1);
+                        &:last-child {
+                            border: 0;
+                        }
+                        a {
+                            color: @white-color;
+                            padding: 14px;
+                            &:hover {
+                                background: @secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul.nav{
+        display: inline-block;
+        li{
+            display: inline-block;
+        }
+        a{
+            display: block;
+            padding: 14px 0;
+            padding-right: 40px;
+            color: @font-color;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8rem;
+        }
+    }
+    .toggle-menu{
+        margin: 0 40px;
+        font-size: @font-size*2;
+        cursor: pointer;
+        color: @secondary-color;
+        display: none;
+    }
+    .nav.active{
+        display: block !important;
+        position: absolute !important;
+        top: 110px;
+        left:0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+        li {
+            display: block;
+        }
+        li.dropdown {
+            position: static;
+            z-index: 3;
+            &:hover {
+                ul {
+                    display: block !important;
+                }
+            }
+            ul {
+                display: none;
+                position: static !important;
+                width: 100% !important;
+                background: none !important;
+                box-sizing: border-box;
+                li {
+                    display: block;
+                    border-bottom: 1px solid rgba(100,100,100,0.1);
+                    &:last-child {
+                        border: 0;
+                    }
+                    a {
+                        color: @white-color;
+                        padding: 14px 45px !important;
+                        background: @secondary-color;
+                        &:hover{
+                            background: @darken-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+nav.access-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 20px;
+    .btn {
+        float: right;
+        .fa {
+            margin-right: 4px;
+        }
+    }
+    .btn:first-child{
+        margin: 0 20px;
+    }
+}

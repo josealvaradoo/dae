@@ -1,85 +1,101 @@
-/* Small devices (tablets, 768px and up) */
-@media screen and (max-width: @screen-sm-min) {
-	.container {
-		width: 98%;
-		margin: auto;
-	}
-	.xs-hidden {
-		display: none !important;
-	}
-	.xs-show {
-		display: inline;
-	}
-	header {
-		height: 200px;
-		h3 {
-			font-size: 1.5rem;
-		}
-	}
-	.navbar {
-		position: relative;
-		.nav {
-			position: absolute;
-			top: 49px;
-			left: 0;
-			right: 0;
-			background: #1b2b3c;
-			overflow: auto;
-			z-index: 2;
-			& > li {
-				position: static;
-				display: block;
-				border-bottom: 1px solid rgba(256,256,256,0.1);
-				.caret {
-					display: none;
-				}
-				ul {
-					position: static;
-					display: block;
-					overflow: auto;
-					li {
-						display: block;
-						&:last-child {
-							border-bottom: 1px solid rgba(256,256,256,0.1);
-						}
-					}
-				}
-			}
-		}
-	}
-	.form {
-		min-width: 100%;
-		width: 100%;
-		.input-addon {
-			input[type=text],
-			input[type=password],
-			input[type=email] {
-				max-width: 79% !important;
-				width: 79% !important;
-			}
-		}
-	}
-	footer {
-		.social-media {
-			a > .fa {
-				margin-bottom: 10px;
-			}
-		}
-	}
+// main:styles.less, out: ../css/styles.min.css, compress: true, sourceMap: false
+// Extra Small Devices - Phones
+@media (min-width:0) and (max-width:639px){
+    .hide-xs,
+    .hide-sm {
+        display: none !important;
+    }
+    .show-sx{
+        display: inline-block;
+    }
+    .main-header {
+        height: 210px !important;
+        h1.page-title {
+            font-size: @font-size*6 !important;
+            text-align: center;
+            letter-spacing: .4rem;
+        }
+    }
+    .introduction-container {
+        display: table;
+        margin: auto;
+    }
+    .today{
+        padding: 40px 0;
+        position: static;
+        top: 0;
+        bottom: 0;
+        box-shadow: none;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    nav.navbar .toggle-menu {
+        display: inline-block;
+    }
+    .login-form {
+        width: 100%;
+        box-sizing: border-box;
+        .form-group {
+            .addon-group {
+                .addon{
+                    padding: 14px 14% 14px 6%;
+                    width: auto important;
+                    text-align: center;
+                }
+                input.form-control{
+                    max-width: 80% !important;
+                }
+            }
+        }
+    }
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media screen and (max-width: @screen-md-min) {
-	.container {
-		width: 90%;
-		margin: auto;
-	}
-	.sm-hidden {
-		display: none;
-	}
+// Small Devices - Tablets
+@media screen and (max-width:1023px){
+    main {
+        .item-grid.s-100:first-child{
+            margin: 0 !important;
+        }
+    }
+    .today{
+        padding: 30px 0;
+        position: static;
+        top: 0;
+        bottom: 0;
+        box-shadow: none;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .hide-sm {
+        display: none !important;
+    }
+    .show-sm {
+        display: inline-block;
+    }
+    .access.show-sm {
+        display: table;
+        margin: auto;
+        .btn {
+            width: 100%;
+            display: block;
+            padding: 15px;
+        }
+    }
+    nav.navbar .toggle-menu {
+        display: inline-block;
+    }
+    .login-form {
+        width: 100%;
+        margin: 10px auto;
+        box-sizing: border-box;
+        .form-group {
+            .addon{
+                width: 20% important;
+            }
+            input.form-control{
+                max-width: 90% !important;
+            }
+        }
+    }
 }
-
-/* Large devices (large desktops, 1200px and up) */
-@media screen and (max-width: @screen-lg-min) {
-	
-}
+// Medium Devices - Desktops
+@media screen and (max-width:1440px){}
