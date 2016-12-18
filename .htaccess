@@ -1,5 +1,5 @@
 #Friendly URL
 RewriteEngine On
 
-RewriteRule     ^home       index.html
+RewriteRule     ^home       home.html
 RewriteRule     ^login      login.html

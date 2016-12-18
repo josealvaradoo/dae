@@ -12,149 +12,34 @@
     <!--<link rel="canonical" href="">-->
     <link rel="stylesheet" href="public/css/ed-grid.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="public/css/styles.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,100"> 
+    <link rel="stylesheet" href="public/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-primary main-center">
-        <div class="item-grid s-100 m-80 main-justify cross-center">
-            <div class="logo">
-                <img src="public/images/logo.png" alt="Logo de la Facultad de Ingenieria UC">
-            </div>
-            <div class="toggle-menu">
-                <span class="fa fa-bars"></span>
-            </div>
-            <ul class="nav hide-sm">
-                <li><a href="home">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#">Quiénes Somos <div class="caret"></div></a>
-                    <ul>
-                        <li><a href="#">Misión</a></li>
-                        <li><a href="#">Visión</a></li>
-                        <li><a href="#">Objetivos</a></li>
-                        <li><a href="#">Organización</a></li>
-                        <li><a href="#">Noticias</a></li>
-                        <li><a href="#">Créditos Web</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Escuelas <div class="caret"></div></a>
-                    <ul>
-                        <li><a href="#">Estudios Básicos</a></li>
-                        <li><a href="#">Civil</a></li>
-                        <li><a href="#">Eléctrica</a></li>
-                        <li><a href="#">Industrial</a></li>
-                        <li><a href="#">Mecánica</a></li>
-                        <li><a href="#">Química</a></li>
-                        <li><a href="#">Telecomunicaciones</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Enlaces <div class="caret"></div></a>
-                    <ul>
-                        <li><a href="#">Ingeniería</a></li>
-                        <li><a href="#">Universidad</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Información <div class="caret"></div></a>
-                    <ul>
-                        <li><a href="#">Admisión</a></li>
-                        <li><a href="#">Regl. Evaluación</a></li>
-                        <li><a href="#">Pensa de estudios</a></li>
-                        <li><a href="#">Gestión Estudiantil</a></li>
-                        <li><a href="#">Noticias</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header class="main-header main-center cross-center">
-        <!-- <nav class="access-navbar"></nav> -->
-        <div class="item-grid s-80">
-            <h1 class="page-title">
-                <span class="hide-xs">Dirección de Asuntos<br>Estudiantiles</span>
-                <span class="hide show-sx">DAE</span>
-            </h1>
-            <div class="hide-xs">
-                <br>
-                <a href="login" class="btn btn-foo uppercase"><span class="fa fa-graduation-cap"></span> Acceso Estudiantes</a>
-                <a href="login" class="btn btn-foo uppercase"><span class="fa fa-users"></span> Acceso Docentes</a>
-            </div>
-        </div>
-    </header>
-    <section class="welcome-wrapper grid-container main-center">
-        <div class="item-grid s-80">
-            <span class="welcome-message">Bievenido/a</span>
-        </div>
-    </section>
-    <main class="main grid-container main-center">
-        <div class="item-grid s-100 m-80 main-justify">
-            <div class="item-grid s-80 m-100 show-sm access">
-                <a href="login" class="btn btn-primary uppercase"><span class="fa fa-graduation-cap"></span> Acceso Estudiantes</a>
-                <br>
-                <a href="login" class="btn btn-primary uppercase"><span class="fa fa-users"></span> Acceso Docentes</a>
-                <br>
-            </div>
-            <div class="item-grid s-80 m-100 l-45 introduction-container">
-                <br class="hide-sm"><br class="hide-sm">
-                <p class="text-justify introduction">
-                    Has ingresado al sitio web de la Dirección de Asuntos Estudiantiles de la Facultad de Ingeniería de la Universidad de Carabobo. Nos encargamos de la gestión de todo lo relacionado con el estudiante, como las inscripciones, la transcripción de notas, las constancias, entre otras.
-                </p>
-            </div>
-            <div class="item-grid s-100 m-100 l-50">
-                <div class="today text-center">
-                    <p id="now"></p>
-                    <p id="day"></p>
-                </div>
-            </div>
-        </div>
-        <section id="links" class="item-grid s-80 main-justify">
-            <div class="item-grid">
-                <ul>
-                    <li><div class="marker"><span class="fa fa-angle-right"></span></div> <a href="#">Matriz de horario 2-2016</a></li>
-                    <li><div class="marker"><span class="fa fa-angle-right"></span></div> <a href="#">Admisión</a></li>
-                    <li><div class="marker"><span class="fa fa-angle-right"></span></div> <a href="#">Calendario Período CEAN-2016 / 2-2016</a></li>
-                    <li><div class="marker"><span class="fa fa-angle-right"></span></div> <a href="#">Graduaciones</a></li>
-                    <li><div class="marker"><span class="fa fa-angle-right"></span></div> <a href="#">Equivalencias</a></li>
-                    <li><div class="marker"><span class="fa fa-angle-right"></span></div> <a href="#">Modificación Calendario 1-2016</a></li>
-                </ul>
-            </div>
-        </section>
-        <section id="contact" class="item-grid s-80 main-center">
-            <div class="item-grid s-100">
-                <form action="#" method="POST" class="form item-grid s-100 main-justify">
-                    <div class="form-group item-grid s-100 m-100 l-50">
-                        <input type="text" name class="form-control" placeholder="Nombre Completo" autocomplete="off" required>
-                    </div>
-                    <div class="form-group item-grid s-100 m-100 l-50">
-                        <input type="email" name class="form-control" placeholder="Email" autocomplete="off" required>
-                    </div>
-                    <div class="form-group item-grid s-100">
-                        <textarea name="message" class="form-control" placeholder="Cuéntanos tus dudas, opiniones o sugerencias.." required></textarea>
-                    </div>
-                    <div class="form-group item-grid s-100">
-                        <button class="btn btn-block uppercase btn-primary"><strong>Enviar Mensaje</strong></button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer class="main-footer main-center">
-        <section class="grid-container s-80 main-justify cross-center">
-            <div class="item-grid s-50 m-45 l-40">
-                <p>Dirección de Asuntos Estudiantiles</p>
-                <p>Facultad de Ingeniería</p>
-                <p>Universidad de Carabobo</p>
-                <p>Información: dae_ing@uc.edu.ve</p>
-            </div>
-            <div class="item-grid s-50 m-45 l-10">
-                <img src="public/images/universidad-carabobo.png" alt="Logo de la Universidad de Carabobo" class="uc">
-            </div>
-        </section>
-    </footer>
-    <script src="public/script/background.js"></script>
-    <script src="public/script/moment.js"></script>
-    <script src="public/script/togglemenu.js"></script>
+   <header class="main-center cross-center">
+       <img src="public/images/universidad-carabobo.png" alt="Universidad de Carabobo">
+   </header>
+   <section class="desintegration">
+       <img src="public/images/desintegration.png" alt="">
+   </section>
+   <section class="welcome uppercase text-center">
+       <p>Facultad de Ingeniería</p>
+       <p>Dirección de asuntos estudiantiles</p>
+   </section>
+   <section class="mockup text-center">
+       <img src="public/images/mockup.png" alt="">
+   </section>
+   <section class="responsive uppercase text-center">
+       <p>Responsive Design</p>
+       <p>UI/UX</p>
+   </section>
+   <section class="isometric text-center">
+       <img src="public/images/isometric.png" alt="">
+   </section>
+   <a href="home" class="button">
+       <span class="fa fa-image"></span>
+       Live Preview
+    </a>
 </body>
 </html>
